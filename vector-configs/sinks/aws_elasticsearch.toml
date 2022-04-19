@@ -1,6 +1,6 @@
 [sinks.aws_elasticsearch]
   type = "elasticsearch"
-  inputs = ["logs_json"]
+  inputs = ["log_json"]
   endpoint = "${AWS_SEARCH_ENDPOINT}"
   mode = "bulk"
   bulk.index = "logs-fly-{{ application_id }}-%Y-%m-%d"
