@@ -1,5 +1,7 @@
 [sinks.aws_elasticsearch]
   type = "elasticsearch"
+  auth.access_key_id = "${AWS_ACCESS_KEY_ID}"
+  auth.secret_access_key = "${AWS_SECRET_ACCESS_KEY}"
   inputs = ["log_json"]
   endpoint = "${AWS_SEARCH_ENDPOINT}"
   mode = "bulk"
