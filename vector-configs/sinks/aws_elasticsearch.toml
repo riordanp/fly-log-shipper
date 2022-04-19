@@ -3,6 +3,7 @@
   auth.strategy = "aws"
   auth.access_key_id = "${AWS_ACCESS_KEY_ID}"
   auth.secret_access_key = "${AWS_SECRET_ACCESS_KEY}"
+  aws.region = "us-east-1"
   inputs = ["log_json"]
   endpoint = "${AWS_SEARCH_ENDPOINT}"
   mode = "bulk"
