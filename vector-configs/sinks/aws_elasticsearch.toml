@@ -3,5 +3,5 @@
   inputs = ["log_json"]
   endpoint = "${AWS_SEARCH_ENDPOINT}"
   mode = "bulk"
-  bulk.index = "logs-fly-{{ application_id }}-%Y-%m-%d"
+  bulk.index = "logs-fly-{{fly.app.name}}-%Y-%m-%d"
   compression = "none"
